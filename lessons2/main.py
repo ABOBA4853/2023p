@@ -21,4 +21,4 @@ students.append(pipaS)
 students.append(bibaF)
 students.append(timaL)
 for student in students:
-        student.ShowStudentInfo()
+        student.ShowInfo()
