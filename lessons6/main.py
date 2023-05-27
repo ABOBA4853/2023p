@@ -47,6 +47,20 @@ while(True):
         if (yes.lower() != 'y'):
             break
 '''
+'''
+import warnings as w
+w.warn('Warning! Properly throw ZeroDivizionError')
 
+try:
+    print(10/0)
+except ZeroDivisionError as zde:
+print(zde)
 
-
+'''
+import warnings as w
+w.simplefilter('ignore', SyntaxWarning)
+w.simplefilter('error', ImportWarning)
+try:
+    w.warn('Properly throw ZeroDivisionError!', ImportWarning)
+except:
+    print('Warnings end!')
