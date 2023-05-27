@@ -1,3 +1,6 @@
+from idlelib.multicall import r
+
+
 class Figure:
     def __init__(self, width = 0, length = 0, R=13):
         self.Width = width

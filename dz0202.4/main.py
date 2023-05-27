@@ -10,6 +10,6 @@ ball = Ball(13)
 area = CalculateArea()
 print(f"Area of triangle {area.TriangleArea(triangle)}")
 print(f"Area of rectangle {area.RectangleArea(rectangle)}")
-print(f"Area of ball {area.BallArea(ball)}")
 print(f"Area of square {area.RectangleArea(square, True)}")
+print(f"Area of ball {area.BallArea(ball)}")
 

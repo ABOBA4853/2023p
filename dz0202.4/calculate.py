@@ -11,5 +11,10 @@ class CalculateArea:
         if(triangle.Width != 0 and triangle.Length != 0):
             return 0.5 * triangle.Width * triangle.Length
 
-    def BallArea(self, R)
+    def BallArea(self, R):
+        print(4 * math.pi * R ** 2)
+
+    def BallVolume(self, R):
+        print(4 / 3 * math.pi * pow(R, 3))
+
 
