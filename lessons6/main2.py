@@ -5,7 +5,6 @@ except type_of_Exception:
     your_code
 except ......
 '''
-'''
 while(True):
     try:
         digit1 = int(input('Enter digit1: '))
@@ -27,4 +26,3 @@ while(True):
                     'Do you want try again [Y/N]?: ')
         if(yes.lower() != 'y'):
             break
-'''
