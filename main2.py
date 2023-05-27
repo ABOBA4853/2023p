@@ -1,0 +1,10 @@
+import inspect as ins
+print(ins.ismodule(requests))
+print(ins.ismodule(Student))
+print(ins.isclass(requests))
+print(ins.isclass(Student))
+print(ins.isfunction(requests.get))
+print(ins.isfunction(requests.post))
+print(ins.isfunction(requests.put))
+print(ins.isfunction(requests.patch))
+print(ins.getmodule(list))
