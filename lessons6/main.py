@@ -28,17 +28,25 @@ while(True):
         if(yes.lower() != 'y'):
             break
 '''
+
 from limiterror import LimitError
 from validation import Checker
 checker = Checker()
-try:
-    amount = int(input('Enter digit1: '))
-    limit = 5
-    if(checker.Check(amount, limit)):
-        print('Your order proccessed successful!')
-except LimitError as le:
-    print(le)
-except ValueError as ve:
-    print(ve)
+while(True):
+    try:
+        amount = int(input('Enter digit1: '))
+        limit = 5
+        if(checker.Check(amount, limit)):
+            print('Your order proccessed successful!')
+    except LimitError as le:
+        print(le)
+    except ValueError as ve:
+        print(ve)
+    finally:
+        yes = input('Do you want try again [Y/N]?: ')
+        if (yes.lower() != 'y'):
+            break
+
+
 
 
