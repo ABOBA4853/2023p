@@ -40,8 +40,19 @@ res = generator.Pow(3)
 for i in res:
     print(i)
 '''
+'''
 from generator import Generator
 generator = Generator(10)
 print(generator.__str__())
 print(generator(15))
 print(generator.Number)
+'''
+#4 decorator
+from decorator import Checker
+checker = Checker()
+#calculate = checker.Check(checker.Calculate)
+#calculate("'h'*2")
+val1 = input("Enter val1: ")
+val2 = input("Enter val2: ")
+operation = input("Enter operation: ")
+checker.Calculate(f"{val1}{operation}{val2}")
