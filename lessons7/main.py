@@ -25,9 +25,16 @@ iter0 = Counter(15, 21)
 for _ in iter0:
     print(iter0.__str__())
 '''
+'''
 while(True):
     try:
         print(iter0.__str__())
         iter0.__next__()
     except StopIteration:
         break
+'''
+from generator import Generator
+generator = Generator(5)
+res = generator.Pow(3)
+for i in res:
+    print(i)
