@@ -3,7 +3,7 @@ class Counter:
         self.I = i
         self.Max_Number = max_number
     def __str__(self):
-        return f"{self.I}"
+        return f'{self.I}'
     def __iter__(self):
         self.I = 0
         return self

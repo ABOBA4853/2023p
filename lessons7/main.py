@@ -33,8 +33,15 @@ while(True):
     except StopIteration:
         break
 '''
+'''
 from generator import Generator
 generator = Generator(5)
 res = generator.Pow(3)
 for i in res:
     print(i)
+'''
+from generator import Generator
+generator = Generator(10)
+print(generator.__str__())
+print(generator(15))
+print(generator.Number)
