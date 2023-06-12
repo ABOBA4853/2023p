@@ -1,5 +1,23 @@
-def calculator(expression: str) -> int:
-    return eval(expression)
+print ('ПРИВІТ ТИ У КАЛЬКУЛЯТОРІ Python')
+q1 = int (вхід('Введіть число 1: '))
+q2 = int (вхід('Введіть число 2: '))
 
+v = int (input('Яку операцію ви хочете виконати? \n 1 додавання \n 2 віднімання \n 3 ділення \n 4 множення \n'))
 
-print(calculator(input()))
+якщо v == 1:
+    r = q1 + q2
+    p = 'додавання'
+    t = p
+якщо v == 2:
+    r = q1 - q2
+    l = 'віднімання'
+    t = l
+якщо v == 3:
+    r = float(q1 / q2)
+    m = 'ділення'
+    t = m
+якщо v == 4:
+    r = q1 * q2
+    n = 'множення'
+    t = n
+print ('Результат ',t,' = ',r)
