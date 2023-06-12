@@ -1,4 +1,28 @@
-import math
+class Expression:
+    def interpret(self, num1, num2):
+        pass
+
+class Addition(Expression):
+    def interpret(self, num1, num2):
+        return num1 + num2
+
+class Subtraction(Expression):
+    def interpret(self, num1, num2):
+        return num1 - num2
+
+class Multiplication(Expression):
+    def interpret(self, num1, num2):
+        return num1 * num2
+
+class Division(Expression):
+    def interpret(self, num1, num2):
+        return num1 / num2
+
+class Power(Expression):
+    def interpret(self, num1, num2):
+        return num1 ** num2
+
+
 def calculate(expression):
     tokens = expression.split()
     num1 = int(tokens[1])
@@ -18,12 +42,13 @@ def calculate(expression):
         return None
 
 while True:
-    print("Мій Калькулятор")
+    print("КАЛЬКУЛЯТОР")
     print("1. Додавання")
     print("2. Віднімання")
     print("3. Множення")
     print("4. Ділення")
     print("5. Піднесення до степеня")
+    print("0. ВИХІД")
     choice = int(input("Виберіть варіант: "))
     if choice == 0:
         break
