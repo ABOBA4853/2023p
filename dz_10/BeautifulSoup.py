@@ -16,7 +16,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 
-page = requests.get("https://ua.sinoptik.ua/погода-київ")
+page = requests.get("https://ua.sinoptik.ua/погода-святопетрівське")
 
 
 soup = BeautifulSoup(page.content, 'html.parser')
