@@ -4,9 +4,7 @@ import sqlite3
 conn = sqlite3.connect('weather.db')
 
 
-conn.execute('''CREATE TABLE IF NOT EXISTS temperature
-
-(date TEXT, time TEXT, temperature REAL)''')
+conn.execute('''CREATE TABLE IF NOT EXISTS temperature (date TEXT, time TEXT, temperature REAL)''')
 
 
 import requests
